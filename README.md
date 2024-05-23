@@ -5,7 +5,6 @@ MOODCHEF is an app that allows you to track your mood, select dietary restrictio
 ## Technologies Used
 - Frontend: React.js
 - Backend: Node.js 
-- Database: MongoDB
 - Deployment: Netlify for frontend
 - Styling: CSS 
 
