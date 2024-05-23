@@ -1,0 +1,387 @@
+* {
+  list-style-type: none;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  color: black;
+  background-color: #eeede9;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.section--title {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  font-size: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul.no-list-style {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card--title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.img--container {
+  border-radius: 20px;
+  width: 100%; 
+  height: 0; 
+  padding-top: 50%; 
+  position: relative; 
+  overflow: hidden;
+}
+
+.img--container img {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 100%; 
+  height: auto; 
+}
+
+.recipe--description {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  background: linear-gradient(
+    to bottom,
+    rgb(251, 250, 250),
+    rgb(248, 246, 246),
+    rgba(240, 239, 239, 0.9),
+    rgba(249, 246, 246, 0.8),
+    rgba(235, 233, 233, 0.5),
+    rgba(247, 245, 245, 0)
+  );
+}
+
+.nav--logo {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  width: 100%;
+  margin-left: 1rem;
+  background: linear-gradient(
+    to right,
+    #e9f151 20%,
+    #c984ca 30%,
+    #23d5ab 70%,
+    #9601fa 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+.nav--icon {
+  height: 6vh;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.button--flex {
+  display: flex;
+  gap: 20px;
+}
+
+.explore--button {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  background-color: rgb(9, 9, 9);
+  color: #ffffff;
+  border-style: none;
+  width: 20vw;
+  height: 4vh;
+  border-radius: 35px;
+  border-width: 0.1rem;
+}
+
+.explore--button:hover {
+  animation-name: divcolor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes divcolor {
+  0% {
+    background-color: #000000;
+  }
+  25% {
+    background-color: #7600ff;
+  }
+  50% {
+    background-color: #49fce3;
+  }
+  75% {
+    background-color: #fcf202;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.section--heading {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  list-style-type: none;
+  color: rgb(9, 10, 10);
+  text-overflow: ellipsis;
+}
+
+.filter {
+  margin: 1rem;
+  padding: 1rem;
+  width: 92%;
+  font-size: 14px;
+  list-style-type: none;
+  color: azure;
+  text-overflow: ellipsis;
+}
+
+select {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  border: none;
+  color: #7600ff;
+  background-color: #eeede9;
+}
+
+input[type="text"] {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  width: 50%;
+  border: none;
+  color: #7600ff;
+  background-color: aliceblue;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.intro {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.filter--label {
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.background {
+  background: linear-gradient(-45deg, #e9f151, #c984ca, #23d5ab, #9601fa);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cards-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 50vh;
+  color: azure;
+}
+
+/* -------Mobile View---------*/
+
+@media all and (max-width: 478px) {
+  nav {
+    width: 100%;
+    padding: 1rem;
+    height: 5%;
+    position: fixed;
+  }
+
+  .nav--logo {
+    letter-spacing: 3px;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .nav--icon {
+    height: 4.5vh;
+    margin-top: 0.5rem;
+  }
+
+  .button--flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .explore--button {
+    width: 40vw;
+    height: 4vh;
+    border-radius: 20px;
+    border-width: 0.1rem;
+  }
+
+  .filter {
+    padding: 0.5rem;
+    width: 87%;
+    font-size: 6px;
+    list-style-type: none;
+    color: azure;
+    text-overflow: ellipsis;
+  }
+
+  select {
+    padding-top: 1rem;
+    text-align: left;
+    font-size: 20px;
+    width: 90%;
+    border: none;
+  }
+
+  input[type="text"] {
+    font-size: 20px;
+    width: 50%;
+    border: none;
+    color: #7600ff;
+    background-color: #eeede9;
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  .filter--label {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .recipe--description {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  .card--title {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
